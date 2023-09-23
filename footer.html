@@ -11,24 +11,28 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#e5425b",
+              red: "#e5425b",
               white: "#fff",
               paleWhite: "#bdacaa",
               black: "#000",
+              gray: "#808080",
               hoverBlack: "#000000c2",
               grayBlack: "#252224",
               transparent: "hsla(0, 0%, 0%, 0.3)",
             },
+
             fontFamily: {
               Montserrat: ["Montserrat", "sans-serif"],
             },
+
             backgroundImage: {
-              "hero-pattern": "url('/assets/pinko_logo.png')",
+              "hero-pattern": "url('assets/pinko-hero-bg_wrapper.jpg')",
             },
           },
         },
       };
     </script>
+
     <!-- google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,6 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- normalized css -->
     <link rel="stylesheet" href="./style/normalized.css" />
     <!-- fontAwesome CDN -->
@@ -48,45 +53,16 @@
     />
     <!-- Customized css -->
     <link rel="stylesheet" href="./style/customized.css" />
-    <style>
-      /* Style for the active link */
-      .active {
-        background-color: black !important;
-        color: white !important;
-      }
-    </style>
   </head>
-
   <body>
-    <!--Contents need to be placed here!-->
-    <div class="bg-transparent py-[1rem] z-50">
-      <header class="header-container w-[960px] px-3 m-auto">
-        <nav
-          class="flex justify-between items-center w-[900px] h-[60px] px-[20]"
-        >
-          <div>
-            <img src="assets/pinko_logo.png" alt="" />
-          </div>
-          <ul class="flex gap-[2rem] font-Montserrat text-white font-medium">
-            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
-              <a href="aboutUs.html">About Us</a>
-            </li>
-            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
-              <a href="blog.html">Blog</a>
-            </li>
-            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
-              <a href="./components/gallery.html">Gallery</a>
-            </li>
-            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
-              <a href="./components/contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <script src="./script/script.js"></script>
+    <footer class="footer-container bg-black">
+      <div class="w-full px-3 py-3 m-auto flex justify-center">
+        <p class="text-white">
+          Copyright © 2048
+          <span class="text-red underline">Company Name</span> - Credit:
+          <span class="text-red underline">HTML Templates</span>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

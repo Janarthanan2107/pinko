@@ -227,11 +227,16 @@
       </div>
     </section>
 
-    <footer class="footer-container bg-black">
-        <div class="w-full px-3 py-3 m-auto flex justify-center">
-            <p class="text-white">Copyright © 2048 <span class="text-red underline">Company Name</span> - Credit: <span class="text-red underline">HTML Templates</span></p>
-        </div>
-    </footer>
+    <!-- <footer class="footer-container bg-black">
+      <div class="w-full px-3 py-3 m-auto flex justify-center">
+        <p class="text-white">
+          Copyright © 2048
+          <span class="text-red underline">Company Name</span> - Credit:
+          <span class="text-red underline">HTML Templates</span>
+        </p>
+      </div>
+    </footer> -->
+    <div id="footer-container"></div>
 
     <!-- navbar extract -->
     <script>
@@ -240,6 +245,17 @@
         .then((response) => response.text())
         .then((html) => {
           document.getElementById("header-container").innerHTML = html;
+          // Add JavaScript for highlighting the active link here if needed
+        });
+    </script>
+
+    <!-- footer extract -->
+    <script>
+      // Fetch and insert the common header
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
           // Add JavaScript for highlighting the active link here if needed
         });
     </script>
