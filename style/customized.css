@@ -2,7 +2,7 @@
 
 :root {
     /* colors are changeable always more combinations are in "https://coolors.co/" */
-    
+
     --Light-Grayish-Blue: hsl(240, 75%, 98%);
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
@@ -72,5 +72,13 @@ a {
 }
 
 i {
-    font-size:16px
+    font-size: 16px
+}
+
+.underline {
+    cursor: pointer !important;
+}
+
+button:hover {
+    color: #e5425b;
 }
